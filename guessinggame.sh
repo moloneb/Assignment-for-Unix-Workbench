@@ -1,7 +1,9 @@
 # Guessing game program for Unix Workbench assignment
 
-count=$(ls | wc -l) # number of files in the directory
-
+Count () {
+  count=$(ls | wc -l) # function for number of files in the directory
+}
+Count
 while [[ $response -ne $count ]]
 do
 echo "Guess the number of files in this directory:"
